@@ -16,8 +16,10 @@ The Arduino library U8g2 can be installed from the library manager of the Arduin
    * Supports many fonts. (Almost) no restriction on the font height.
    * Requires some memory in the microcontroller to render the display.
  * U8x8
-   * Text output only (character) device.
+   * Text output only (character) device.Compatible
    * Only fonts allowed with fit into a 8x8 pixel grid.
    * Writes directly to the display. No buffer in the microcontroller required.
 
 [Setup Guide and Reference Manual](https://github.com/olikraus/u8g2/wiki)
+
+add modify to compatible with linkit 7697
