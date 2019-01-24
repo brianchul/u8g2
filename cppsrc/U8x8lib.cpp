@@ -767,7 +767,7 @@ extern "C" uint8_t u8x8_byte_arduino_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t a
       }
       
 #if ARDUINO >= 10600
-      SPI.beginTransaction(SPISettings(u8x8->bus_clock, MSBFIRST, internal_spi_mode));
+      SPI.beginTransaction(SPISettings(u8x8->bus_clock, MSBFIRST, (SPIDataMode)internal_spi_mode));
 #else
       SPI.begin();
       
